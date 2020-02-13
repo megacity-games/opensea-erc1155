@@ -1,0 +1,38 @@
+{
+  "name": "Hashimoto's Wallet",
+  "description": "Rumored to be the HARDWARE WALLET of the legendary KIKAI HASHIMOTO.",
+  "image": "https://megacity-assets.s3.amazonaws.com/item-hashimotos-wallet.png",
+  "rarity": "rare",
+  "games": [
+    {
+      "name": "TRADING SIMULATION",
+      "properties": {
+        "coins_capacity": 300,
+        "ghosted": true
+      }
+    }
+  ],
+  "attributes": [
+    {
+      "trait_type": "rarity",
+      "value": "rare"
+    },
+    {
+      "trait_type": "game",
+      "value": "Trading Simulation"
+    },
+    {
+      "trait_type": "coins_capacity",
+      "value": 300
+    },
+    {
+      "trait_type": "ghosted",
+      "value": true
+    },
+    {
+      "display_type": "boost_number",
+      "trait_type": "coins_capacity",
+      "value": 200
+    }
+  ]
+}
