@@ -44,7 +44,7 @@ We have also included an example JSON for HASHIMOTO'S WALLET, a RARE item in MEG
     
 2. Clone this repo: `git clone https://github.com/megacity-games/opensea-erc1155.git`
 
-3. Checkout the `workshop` branch:
+3. Checkout the `workshop` branch: `git checkout workshop`
 
 4. Run `yarn`.
 
@@ -54,20 +54,25 @@ We have also included an example JSON for HASHIMOTO'S WALLET, a RARE item in MEG
 
 6. Run `yarn truffle test` and see what happens!
 
+7. Modify `migrations/2_deploy_contracts.js` to include your very own contract.
+
+
 
 ### Neat Things To Do
 
 1. Create your own contract inside of `contracts/`.
 
-2. Run some tests for your contract.
+2. Write and run some tests for your contract.
 
 3. Set up Infura.
 
-3. Deploy your contract to the Rinkeby test network: 
+3. Migrate your contract to the Rinkeby test network: 
 
 `export INFURA_KEY="<infura_key>"
 export MNEMONIC="<metmask_mnemonic>"
 yarn truffle migrate --network rinkeby`
+
+4. Add metadata - with your own server, cloud host, or IPFS.
 
 ## OpenSea ERC-1155 Starter Contracts
 
