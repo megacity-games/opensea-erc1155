@@ -11,6 +11,6 @@ contract Megacity is ERC1155Tradable {
         public
         ERC1155Tradable("Megacity", "MC", _proxyRegistryAddress)
     {
-        _setBaseMetadataURI("https://api-staging.megacity.gg/ethereum/");
+        _setBaseMetadataURI("https://api.megacity.gg/ethereum/");
     }
 }
