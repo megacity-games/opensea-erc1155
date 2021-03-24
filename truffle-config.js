@@ -18,6 +18,10 @@
  *
  */
 
+require('dotenv').config();
+
+console.log(process.env);
+
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const MNEMONIC = process.env.MNEMONIC;
 const INFURA_KEY = process.env.INFURA_KEY;
