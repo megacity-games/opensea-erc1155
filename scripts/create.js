@@ -33,7 +33,7 @@ async function main() {
     console.log(NFT_CONTRACT_ADDRESS);
     const hexValue = web3.utils.randomHex(0);
     console.log(hexValue);
-    const nftContract = new web3Instance.eth.Contract(abi, NFT_CONTRACT_ADDRESS, { gasLimit: "10000000" });
+    const nftContract = new web3Instance.eth.Contract(abi, NFT_CONTRACT_ADDRESS, { gasLimit: "1000000" });
     const result = await nftContract.methods.create(OWNER_ADDRESS, 5, '', hexValue).send({ from: OWNER_ADDRESS });
     console.log('Minted item.');
     console.log(_.get(result, 'events.TransferSingle.returnValues'));

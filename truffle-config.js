@@ -72,14 +72,12 @@ module.exports = {
 
     live: {
       network_id: 1,
-      provider: function() {
-        return new HDWalletProvider(
-          MNEMONIC,
-          "https://mainnet.infura.io/v3/" + INFURA_KEY
-        );
-      },
+      provider: new HDWalletProvider(
+        MNEMONIC,
+        "https://mainnet.infura.io/v3/" + INFURA_KEY
+      ),
       gas: 4000000,
-      gasPrice: 20000000000
+      gasPrice: 180000000000
     }
   },
 
