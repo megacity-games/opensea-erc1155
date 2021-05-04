@@ -18,7 +18,7 @@
  *
  */
 
-require('dotenv').config();
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}`});
 
 console.log(process.env);
 
@@ -60,12 +60,10 @@ module.exports = {
     },
     
     rinkeby: {
-      provider: function() {
-        return new HDWalletProvider(
-          MNEMONIC,
-          "https://rinkeby.infura.io/v3/" + INFURA_KEY
-        );
-      },
+      provider: new HDWalletProvider(
+        MNEMONIC,
+        "https://rinkeby.infura.io/v3/" + INFURA_KEY
+      ),
       network_id: "*",
       gas: 4600000
     },
