@@ -1,17 +1,19 @@
 {
   "name": "opensea-erc1155",
   "version": "1.0.0",
-  "description": "Starter contracts for an ERC-1155 project.",
+  "description": "MEGACITY contracts for an ERC-1155 project, adopted from OpenSea starter project",
   "main": "index.js",
   "scripts": {
     "build": "truffle compile",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-testnets": "NODE_ENV=rinkeby node scripts/create.js",
+    "deploy-livenet": "NODE_ENV=live node scripts/create.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ProjectOpenSea/opensea-erc1155.git"
   },
-  "author": "alex.atallah@opensea.io",
+  "author": "Erik August Johnson <ease@megacity.gg>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ProjectOpenSea/opensea-erc1155/issues"
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/ProjectOpenSea/opensea-erc1155#readme",
   "dependencies": {
     "@0x/subproviders": "^2.1.4",
+    "dotenv": "^8.2.0",
     "multi-token-standard": "github:ProjectOpenSea/multi-token-standard",
     "opensea-js": "^1.1.5",
     "openzeppelin-solidity": "^2.1.3",

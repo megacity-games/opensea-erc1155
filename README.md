@@ -1,3 +1,74 @@
+## MEGACITY NFT Workshop
+
+For this workshop, we will be using a `truffle` project that gives us starter contracts we can use to explore the workings of the ERC-1155 standard.
+
+This project was created by the team at [OpenSea](https://www.opensea.io), the largest marketplace for crypto collectibles.
+
+Some of the tools in this repo include:
+
+In `contracts/`
+- An ERC 1155 "Tradable" contract
+- A "MyCollectible" example you can use to build and deploy your own ERC-1155
+- A "MyLootbox" example you can use to build a loot box smart contract
+- A "MyFactory" example to create your own collectible pre-sale
+
+In `scripts/`
+
+- A script to run your collectible pre-sale.
+
+
+We have also included an example JSON for HASHIMOTO'S WALLET, a RARE item in MEGACITY.
+
+### Requirements
+
+- Git
+- Node >= 8.11
+- npm >= 5.6
+- yarn: `npm install -g yarn`
+- Truffle: `npm install -g Truffle` / `yarn add truffle`
+- Ganache: https://www.trufflesuite.com/ganache
+
+### Optional
+
+- IDE support for Solidity
+- Infura - for deploying to test net: http://infura.io/
+- Metamask - for deploying to test net: 
+
+
+### Setup
+
+1. Install dependencies
+    - Node / npm
+    - yarn: `npm install -g yarn`
+    - Ganache: https://www.trufflesuite.com/ganache
+    
+2. Clone this repo: `git clone https://github.com/megacity-games/opensea-erc1155.git`
+
+3. Checkout the `workshop` branch:
+
+4. Run `yarn`.
+
+5. Add `truffle`: `yarn add truffle`.
+
+5. Install and run Ganache: https://www.trufflesuite.com/ganache
+
+6. Run `yarn truffle test` and see what happens!
+
+
+### Neat Things To Do
+
+1. Create your own contract inside of `contracts/`.
+
+2. Run some tests for your contract.
+
+3. Set up Infura.
+
+3. Deploy your contract to the Rinkeby test network: 
+
+`export INFURA_KEY="<infura_key>"
+export MNEMONIC="<metmask_mnemonic>"
+yarn truffle migrate --network rinkeby`
+
 ## OpenSea ERC-1155 Starter Contracts
 
 - [About these contracts](#about-these-contracts)

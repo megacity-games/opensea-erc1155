@@ -1,3 +1,5 @@
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}`});
+
 const Migrations = artifacts.require("Migrations");
 
 module.exports = function(deployer, network, accounts) {

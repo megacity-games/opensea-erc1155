@@ -18,6 +18,10 @@
  *
  */
 
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}`});
+
+console.log(process.env);
+
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const MNEMONIC = process.env.MNEMONIC;
 const INFURA_KEY = process.env.INFURA_KEY;
@@ -57,26 +61,22 @@ module.exports = {
     },
     
     rinkeby: {
-      provider: function() {
-        return new HDWalletProvider(
-          MNEMONIC,
-          "https://rinkeby.infura.io/v3/" + INFURA_KEY
-        );
-      },
+      provider: new HDWalletProvider(
+        MNEMONIC,
+        "https://rinkeby.infura.io/v3/" + INFURA_KEY
+      ),
       network_id: "*",
       gas: 4600000
     },
 
     live: {
       network_id: 1,
-      provider: function() {
-        return new HDWalletProvider(
-          MNEMONIC,
-          "https://mainnet.infura.io/v3/" + INFURA_KEY
-        );
-      },
+      provider: new HDWalletProvider(
+        MNEMONIC,
+        "https://mainnet.infura.io/v3/" + INFURA_KEY
+      ),
       gas: 4000000,
-      gasPrice: 20000000000
+      gasPrice: 180000000000
     }
   },
 
