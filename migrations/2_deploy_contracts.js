@@ -20,11 +20,7 @@ module.exports = function(deployer, network) {
   }
 
   if (!ENABLE_LOOTBOX) {
-<<<<<<< HEAD
-    deployer.deploy(MyCollectible, proxyRegistryAddress,  {gas: 5000000});
-=======
     deployer.deploy(Megacity, proxyRegistryAddress, {gas: 5000000});
->>>>>>> dev-live
   } else if (NFT_ADDRESS_TO_USE) {
     deployer.deploy(MyLootBox, proxyRegistryAddress, NFT_ADDRESS_TO_USE, {gas: 5000000})
       .then(setupLootbox);
